@@ -1,0 +1,119 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #3A0051;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    width: 90%;
+    max-width: 400px;
+}
+
+.logo {
+    height: 100px;
+    width: auto;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.glow {
+    animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+    0% { text-shadow: 0 0 5px white, 0 0 10px white; }
+    50% { text-shadow: 0 0 15px white, 0 0 25px white; }
+    100% { text-shadow: 0 0 5px white, 0 0 10px white; }
+}
+
+.input-field {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+    background-color: #eacbf6;
+    color: #67028f;
+}
+
+.input-field:hover {
+    box-shadow: 0 0 10px #D100D1;
+    font-size: 1.1rem;
+    transition: 0.3s;
+}
+
+.input-field::placeholder {
+    color: #67028f;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background-color: #eacbf6;
+    color: #3A0051;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: transform 0.2s, box-shadow 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #D100D1;
+}
+
+.extra-links {
+    margin-top: 15px;
+}
+
+a {
+    display: block;
+    color: #B804FF;
+    text-decoration: none;
+    margin: 5px 0;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #0B032D;
+    animation: glow 1.5s infinite alternate;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    h2 {
+        font-size: 2rem;
+    }
+    
+    .container {
+        padding: 20px;
+    }
+
+    .input-field,
+    .btn {
+        font-size: 1rem;
+    }
+}
