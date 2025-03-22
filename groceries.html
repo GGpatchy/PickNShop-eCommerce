@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Groceries</title>
+    <link rel="stylesheet" href="groceries.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="gro-head">
+            <img src="logo-removebg-preview.png" alt="PickNShop Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">Offers</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="login.html">Login / Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Fresh groceries delivered to your doorstep.</h1>
+            <p>Shop the best quality fruits, vegetables, dairy, and more at PickNShop!</p>
+            <a href="#" class="cta-btn">
+                <i class="fa-solid fa-down-long img1"></i>Shop Now<i class="fa-solid fa-down-long img2"></i>
+            </a>
+        </div>
+    </section>
+
+    <section class="featured-category">
+        <h2>Shop</h2>
+        <div class="categories-grid">
+            <div class="category-card">
+                <a   href="#fru"><div class="image" style="background-image: url(fruits.jpg) ;"></div></a>
+                <h3>Fruits</h3>
+            </div>
+            <div class="category-card">
+                <a href="#veg"><div class="image" style="background-image: url(vegetables.jpg);"></div></a>
+                <a><h3>Vegetables</h3></a>
+            </div>
+            <div class="category-card">
+                <a href="#dairy"><div class="image" style="background-image: url(dairy.jpeg);"></div></a>
+                <a><h3>Dairy</h3></a>
+            </div>
+            <div class="category-card">
+                <a href="#bake"><div class="image" style="background-image: url(bakery.avif);"></div></a>
+                <h3>Bakery</h3>
+            </div>
+        </div>
+    </section>
+
+    <section class="product-highlights">
+        <h2 id="fru">Fruits</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="product-image" style="background-image: url(oranges.jpg);"></div>
+                <h3>Oragnic Apples</h3>
+                <p class="price">$2.99/kg <span class="old">$4.99/kg</span></p>
+                <button class="add-to-cart">Add to cart <i class="fas fa-cart-plus"></i></button>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image" style="background-image: url(banana.jpeg);"></div>
+                <h3>Banana</h3>
+                <p class="price">$1.99/kg <span class="old">$3.99/kg</span></p>
+                <button class="add-to-cart">Add to cart <i class="fas fa-cart-plus"></i></button>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image" style="background-image: url(kiwi.webp);"></div>
+                <h3>Kiwi</h3>
+                <p class="price">$0.99/kg <span class="old">$1.32/kg</span></p>
+                <button class="add-to-cart">Add to cart <i class="fas fa-cart-plus"></i></button>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image" style="background-image: url(pineapple.jpg);"></div>
+                <h3>Pineapple</h3>
+                <p class="price">$0.32/kg <span class="old">$2.99/kg</span></p>
+                <button class="add-to-cart">Add to cart <i class="fas fa-cart-plus"></i></button>
+            </div>
+        </div>
+
+        <div class="best-sellers">
+            <h2 id="veg">Vegetables</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image" style="background-image: url(carrot.jpeg);"></div>
+                    <h3>Carrot</h3>
+                    <p class="price">$1.32/kg <span class="old"> $4.99/kg</span></p>
+                    <button class="add-to-cart">Add to cart <i class="fas fa-cart-plus"></i></button>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image" style="background-image: url(spinach.jpeg);"></div>
+                    <h3>Spinach</h3>
+                    <p class="price">$5.32/kg <span class="old">$10.99/kg</span></p>
+                    <button class="add-to-cart">Add to cart <i class="fas fa-cart-plus"></i></button>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image" style="background-image: url(turnip.webp);"></div>
+                    <h3>Turnip</h3>
+                    <p class="price">$7.32/kg <span class="old">$15.99/kg</span></p>
+                    <button class="add-to-cart">Add to cart <i class="fas fa-cart-plus"></i></button>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image" style="background-image: url(cucumber.jpeg);"></div>
+                    <h3>Cucumber</h3>
+                    <p class="price">$3.32/kg <span class="old">$9.99/kg</span></p>
+                    <button class="add-to-cart">Add to cart <i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="best-sellers">
+            <h2 id="dairy">Dairy Products</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image" style="background-image: url(milk.jpg);"></div>
+                    <h3>Milk</h3>
+                    <p class="price">$0.32/L <span class="old"> $2.99/L</span></p>
+                    <button class="add-to-cart">Add to cart <i class="fas fa-cart-plus"></i></button>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image" style="background-image: url(ice.jpeg);"></div>
+                    <h3>Ice-Cream</h3>
+                    <p class="price">$3.32/kg <span class="old">$6.99/kg</span></p>
+                    <button class="add-to-cart">Add to cart <i class="fas fa-cart-plus"></i></button>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image" style="background-image: url(cottage\ cheese.jpeg);"></div>
+                    <h3>Cottage Cheese</h3>
+                    <p class="price">$6.32/kg <span class="old">$10.99/kg</span></p>
+                    <button class="add-to-cart">Add to cart <i class="fas fa-cart-plus"></i></button>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image" style="background-image: url(cheese.jpeg);"></div>
+                    <h3>Cheese</h3>
+                    <p class="price">$5.32/kg <span class="old">$8.99/kg</span></p>
+                    <button class="add-to-cart">Add to cart <i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="best-sellers">
+            <h2 id="bake">Bakery Items</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image" style="background-image: url(bread.jpeg);"></div>
+                    <h3>Bread</h3>
+                    <p class="price">$4.32/kg <span class="old"> $8.99kg/</span></p>
+                    <button class="add-to-cart">Add to cart <i class="fas fa-cart-plus"></i></button>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image" style="background-image: url(toast.jpeg);"></div>
+                    <h3>Toast</h3>
+                    <p class="price">$5.32/kg <span class="old">$9.99/kg</span></p>
+                    <button class="add-to-cart">Add to cart <i class="fas fa-cart-plus"></i></button>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image" style="background-image: url(bagel.jpg);"></div>
+                    <h3>Bagel</h3>
+                    <p class="price">$4.32/kg <span class="old">$7.99/kg</span></p>
+                    <button class="add-to-cart">Add to cart <i class="fas fa-cart-plus"></i></button>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image" style="background-image: url(cupcake.jpg);"></div>
+                    <h3>Cupcake</h3>
+                    <p class="price">$1.32/kg <span class="old">$5.99/kg</span></p>
+                    <button class="add-to-cart">Add to cart <i class="fas fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>About Us</h3>
+                <p>We are a leading E-Commerce website/platform offering the best products from all over the world!</p>
+            </div>
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Categories</a></li>
+                    <li><a href="#">Offers</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Privacy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 PickNShop. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="groceries.js"></script>
+</body>
+</html>

@@ -1,0 +1,338 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #3A0051;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.gro-head img {
+    height: 50px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+@keyframes glow {
+    0% { text-shadow: 0 0 5px red, 0 0 10px red; }
+    50% { text-shadow: 0 0 15px red, 0 0 25px red; }
+    100% { text-shadow: 0 0 5px red, 0 0 10px red; }
+}
+
+nav ul li a:hover {
+    animation: glow 1.5s infinite alternate;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+
+    .gro-head img {
+        margin-bottom: 1rem;
+        padding-right: 22px;
+    }
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    background-image: url(grocery-shopping-discount-banner-paper-260nw-394204924.jpg);
+    background-size: cover;
+    background-position: right;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #13293D;
+    text-decoration: underline;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: black;
+}
+
+.cta-btn {
+    padding: 0.8rem 2rem;
+    background-color: #ff004c;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    animation: glow 1.5s infinite alternate;
+    background-color: #3A0051;
+}
+
+.img1 {
+    padding-right: 10px;
+}
+
+.img2 {
+    padding-left: 10px;
+}
+
+.featured-category {
+    padding: 2rem;
+    text-align: center;
+    background-color: rgb(25, 7, 39);
+}
+
+.featured-category h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: rgb(236, 78, 247);
+    animation: glow1 1.5s infinite alternate;
+}
+
+@keyframes glow1 {
+    0% { text-shadow: 0 0 5px red, 0 0 10px rgb(196, 2, 2); }
+    50% { text-shadow: 0 0 15px red, 0 0 25px rgb(100, 1, 1); }
+    100% { text-shadow: 0 0 5px rgb(110, 1, 1), 0 0 10px rgb(45, 1, 1); }
+}
+
+
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.category-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: yellow;
+}
+
+.category-card h3 {
+    font-size: 1.2rem;
+    color: #3A0051;
+    margin-top: 1rem;
+}
+
+.image {
+    height: 150px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.image:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.product-highlights {
+    padding: 2rem;
+    background-color: #f9f9f9;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.product-card {
+    background: white;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    background-color: #ff004c;
+}
+
+.product-card h3 {
+    color: #F7CB15;
+}
+
+.product-image {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+}
+
+.price {
+    color: #42f90b;
+    font-weight: bold;
+    margin: 0.5rem 0;    
+}
+
+.old {
+    color: #999;
+    text-decoration: line-through;
+    font-size: 0.9rem;
+}
+
+.add-to-cart {
+    background-color: #2E282A;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.3s ease;
+}
+
+.add-to-cart:hover {
+    background: #3A0051;
+}
+
+.best-sellers {
+    margin-top: 3rem;
+}
+
+footer {
+    background-color: #3A0051;
+    color: white;
+    padding: 50px 20px 20px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 20px;
+}
+
+.footer-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #D100D1;
+}
+
+.footer-content p {
+    font-size: 1rem;
+    line-height: 2;
+    color: #81D2C7;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #D100D1;
+    animation: glow 1.5s infinite alternate;
+}
+
+.footer-section.contact ul li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #D100D1;
+}
+
+.footer-section.contact ul li i {
+    font-size: 1.2rem;
+    color: #D100D1;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #D100D1;
+    animation: glow 1.5s infinite alternate;
+}
+
+.footer-button {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-top: 10px;
+    border-top: 1px solid #D100D1;
+    font-size: 0.9rem;
+    color: #81D2C7;
+}
